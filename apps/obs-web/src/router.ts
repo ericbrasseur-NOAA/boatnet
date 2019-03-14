@@ -3,6 +3,7 @@ import Router from 'vue-router';
 import DefaultLayout from './layouts/Default.vue';
 import Home from './views/Home.vue';
 import About from './views/About.vue';
+import Chart from './views/Chart.vue';
 
 Vue.use(Router);
 
@@ -21,6 +22,11 @@ export default new Router({
           path: '/about',
           name: 'about',
           component: About
+        },
+        {
+          path: '/chart',
+          name: 'chart',
+          component: Chart
         }
       ]
     }
