@@ -8,7 +8,7 @@ import 'quasar/dist/quasar.min.css'; // WS- Added this after commenting out .sty
 import './styles/quasar.styl';
 import '@quasar/extras/roboto-font/roboto-font.css';
 import '@quasar/extras/material-icons/material-icons.css';
-import GanttElastic from "gantt-elastic/src/GanttElastic.vue";
+import GanttElastic from 'gantt-elastic';
 
 import {
   Quasar,

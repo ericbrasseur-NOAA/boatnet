@@ -14,5 +14,8 @@
     "babel-cli": "^6.26.0",
     "del-cli": "^1.1.0",
     "lerna": "^3.13.1"
+  },
+  "dependencies": {
+    "gantt-elastic": "^0.10.14"
   }
 }
