@@ -62,7 +62,7 @@ const tasks2 = [
 
 const options2 = {
   title: {
-    label: 'Your project title as html (link or whatever...)',
+    label: 'Your project title as html',
     html: false
   },
   taskList: {
@@ -70,7 +70,7 @@ const options2 = {
       { id: 1, label: 'ID', value: 'id', width: 40 },
       { id: 2, label: 'Description', value: 'label', width: 200, expander: true },
       { id: 3, label: 'Assigned to', value: 'user', width: 130, html: true },
-      { id: 3, label: 'Start', value: task => dayjs(task.start).format('YYYY-MM-DD'), width: 78 },
+      { id: 3, label: 'Start', value: (task: any) => dayjs(task.start).format('YYYY-MM-DD'), width: 78 },
       { id: 4, label: 'Type', value: 'type', width: 68 },
       {
         id: 5,
@@ -110,12 +110,5 @@ export default class BaseIterator extends Vue {
   private tasks: any = tasks2;
   private options: any = options2;
 }
-
-// @Component
-// export default class ChartPage extends Vue {
-//   components = { 'gantt-elastic': GanttElastic };
-//   private tasks: any;
-//   private options: any;
-// }
 
 </script>
