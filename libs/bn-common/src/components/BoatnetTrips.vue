@@ -10,7 +10,8 @@
         style="width: 200px;"
       >
         <template v-slot:append>
-          <q-icon v-if="searchText !== ''" name="close" @click="searchText = ''" class="cursor-pointer"/>
+          <q-icon v-if="searchText !== ''" name="close"
+          @click="searchText = ''" class="cursor-pointer"/>
           <q-icon name="search"/>
         </template>
       </q-input>
@@ -28,7 +29,6 @@
     </div>
   </q-page>
 </template>
-
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';

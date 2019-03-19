@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import DefaultLayout from './layouts/Default.vue';
-import Home from './views/Home.vue';
 import Settings from './views/Settings.vue';
 import Login from './views/Login.vue';
+import Trips from './views/Trips.vue';
 import Hauls from './views/Hauls.vue';
 
 Vue.use(Router);
@@ -21,8 +21,8 @@ const router = new Router({
       children: [
         {
           path: '',
-          name: 'home',
-          component: Home
+          name: 'trips',
+          component: Trips
         },
         {
           path: '/settings',

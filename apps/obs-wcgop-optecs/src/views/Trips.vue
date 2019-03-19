@@ -2,7 +2,6 @@
   <boatnet-trips v-bind:tripsSettings="wcgopTripsSettings" v-bind:tripsData="wcgopTripsData"/>
 </template>
 
-
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import BoatnetTrips, { BoatnetTripsSettings } from '@boatnet/bn-common';
