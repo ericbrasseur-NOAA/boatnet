@@ -4,6 +4,7 @@ import DefaultLayout from './layouts/Default.vue';
 import Settings from './views/Settings.vue';
 import Login from './views/Login.vue';
 import Trips from './views/Trips.vue';
+import TripDetails from './views/TripDetails.vue';
 import Hauls from './views/Hauls.vue';
 
 Vue.use(Router);
@@ -23,6 +24,12 @@ const router = new Router({
           path: '',
           name: 'trips',
           component: Trips
+        },
+        {
+          path: '/tripdetails/:tripNum',
+          name: 'tripdetails',
+          component: TripDetails,
+          props: true
         },
         {
           path: '/settings',
